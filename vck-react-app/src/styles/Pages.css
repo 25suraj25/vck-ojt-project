@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(116, 176, 237);
+    margin-right: 0;
+
+}
+
+.inner-body {
+    height: 550px;
+    width: 70%;
+    margin: 8% 15% 8%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    overflow-y: auto;
+    position: fixed;
+
+
+
+}
+
+#home-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 5px 0 0 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/vck-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    filter: brightness(60%);
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#headline {
+    color: rgb(234, 227, 227);
+    margin-left: 12%;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+
+}
+
+#headline2 {
+    color: white;
+    margin-left: 3%;
+    font-size: 50px;
+    margin-top: -5px;
+    font-family: Arial, sans-serif;
+}
+
+#journy-text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 15px;
+
+}
+
+#apply-btn {
+    border: 2px solid rgb(47, 206, 47);
+    border-radius: 5px;
+    background-color: rgb(12, 174, 47);
+    color: #ffffff;
+    height: 40px;
+    width: 130px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+#apply-btn:hover {
+    box-shadow: 0 3px 5px 0;
+    background-color: rgb(6, 136, 17);
+
+}
+
+.home-text1 {
+    line-height: 1.6;
+    color: #f37b7b;
+    padding: 20px 15px 0 40px;
+    font-size: 21px;
+}
+
+.home-text2 {
+    line-height: 1.6;
+    color: #111010;
+    padding: 20px 15px 0 40px;
+    font-size: 21px;
+    padding-top: 9px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.campus-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.campus-img1 {
+    width: 45%;
+    border-radius: 10px;
+    background-image: url("/vck-college.jpeg");
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.campus-img2 {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.campus-img:hover {
+    transform: scale(1.02);
+}
+
+.explore-section {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.explore-text {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.ready-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.explore-button {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #218838;
+}
+
+#choose-text {
+    padding-left: 50px;
+    color: rgb(52, 58, 64);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+#why-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    list-style-type: disc;
+    color: rgb(85, 85, 85);
+}
+
+
+
+.list {
+    list-style-type: disc;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+    padding-inline-start: 10px;
+    padding-left: 30px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+
+section-title {
+    color: #343a40;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+
+}
+
+.about-text {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    font-size: 19px;
+
+}
+
+.about-text2 {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    font-size: 19px;
+
+
+}
+
+.about-title {
+    color: #87bbf3;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    margin-top: 40px;
+
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out both;
+}
+
+
+#our-values {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 19px;
+    padding: 0 25px 0 20px;
+    margin-left: 25px;
+
+}
+
+#history {
+    color: #343a40;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+#history-text {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 19px;
+}
+
+
+/* CoursePageStyle */
+
+#course-head {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    margin-top: 35px;
+}
+
+#academic-text {
+    line-height: 1.6;
+    color: #555;
+    margin: 15px 25px 15px 25px;
+    font-size: 19px;
+    margin-left: 25px;
+}
+
+#capmpus-title {
+    color: #343a40;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-left: 30px;
+
+}
+
+#course-vedio {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    margin: 10px;
+    display: block;
+}
+
+#video-text {
+    text-align: center;
+    padding: 10px;
+    color: #777;
+    font-style: italic;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#ug-headline {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+#ug-list,
+#pg-list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+#ug-list>li,
+#pg-list>li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+
+#ug-list ul,
+#pg-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#ug-programs,
+#pg-programs {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#fee-structure,
+#vocational-courses {
+    font-size: 24px;
+    color: #333;
+    margin: 40px 0 10px 25px;
+
+
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+#fee-table th,
+#fee-table td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+#fee-table thead {
+    background-color: #f2f4f7;
+    font-weight: bold;
+}
+
+#fee-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#abt-course {
+    color: #444;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-left: 25px;
+}
+
+#qus-text {
+    color: #444;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#inquire-btn {
+    border: 2px solid rgb(47, 206, 47);
+    border-radius: 5px;
+    background-color: rgb(95, 134, 104);
+    color: #ffffff;
+    height: 40px;
+    width: 200px;
+    margin-left: 40%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#inquire-btn:hover {
+    box-shadow: 0 3px 5px 0;
+    background-color: rgb(10, 109, 18);
+}
+
+/* Contact pageStyla */
+
+#contact-title {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#con-text{
+    font-size: 19px;
+    margin-left: 25px;
+
+}
+
+.genral-hedline{
+    color: #343a40;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size:35px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    padding-top: 17px;
+    
+}
+
+#abt-collage{
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 19px;
+    margin-left: 25px;
+    margin-top: 17px;
+}
+
+.abt-collage2{
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 19px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+#map-link a{
+    margin-left: 25px;
+    border: 2px solid rgb(43, 41, 41);
+    background-color: #ccc;
+    border-radius: 8px;
+    height: 20px;
+    width: 330px;
+}
+
+#Process-Table{
+     
+  width: 80%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 30px 20px 0 60px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f4f7;
+}
+
+
+/*---------------------------------------------------------- Admissionpage style */
+
+#adm-head{
+    text-align: center;
+    color: blue;
+    font-size: 45px;
+
+}
+
+
+.abt-text{
+    font-size: 18px;
+    margin-left: 25px;
+    color: #444;
+    margin-top: 30px;
+}
+
+#ad-list li{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    
+
+}
+
+#apl-head{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+}
