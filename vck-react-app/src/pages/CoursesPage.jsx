@@ -107,7 +107,7 @@ const CoursesPage = () => {
           training for career enhancement.
         </p>
         <p id="qus-text">Have questions about a specific course?</p>
-        <button id="inquire-btn"><Link to="/contact">Contact</Link></button>
+        <button id="inquire-btn2"><Link to="/contact">Contact</Link></button>
 
 
 
