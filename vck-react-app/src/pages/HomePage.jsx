@@ -40,10 +40,10 @@ const HomePage = () => {
         <h2 className="section-title">Campus Life & Facilities</h2>
         <div class="campus-gallery">
           <div class="campus-img1">
-            <img  src="vck-college.jpg" alt="Campus Image 1" />
+            <img  src="vck-image1.jpeg" alt="Campus Image 1" />
           </div>
           <div  class="campus-img2" >
-            <img src="vck-college2.jpg" alt="Campus Image 2" />
+            <img src="vck-image2.jpeg" alt="Campus Image 2" />
           </div>
         </div>
 

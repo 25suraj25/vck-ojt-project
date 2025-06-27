@@ -16,7 +16,7 @@ const CoursesPage = () => {
         <h2 id="capmpus-title">Discover Campus Life</h2>
         <div id="course-video">
           <video controls width="100%" height="auto">
-            <source src="/college-tour.mp4" type="video/mp4" />
+            <source src="/public/vck-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <p id="video-text">Get a glimpse of the vibrant academic and social life at Vivekanand College</p>

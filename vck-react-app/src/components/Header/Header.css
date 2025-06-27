@@ -10,6 +10,7 @@ header{
     top: 0;
     color: #ffffff;
     height: 80px;
+    z-index: 1000;
 }
 
 ul{
@@ -62,3 +63,85 @@ nav{
     box-shadow: 0 3px 5px 0;
     background-color: rgb(6, 136, 17);
 }
+
+
+.hamburgur{
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 768px) {
+   .hamburger {
+     display: block;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+   }
+
+   nav {
+     display: none;
+     flex-direction: column;
+     background-color: #aba5a5;
+     position: absolute;
+     
+     right: 0;
+     width: 100%;
+     padding: 10px;
+     
+
+
+   }
+
+   nav.nav-open {
+     display: flex;
+     height: 300px;
+     margin-left: 80%;
+     width: 150px;
+     background-origin: 10px;
+     border: 3px solid bisque;
+     border-radius: 10px;
+     top: 0;
+     position: fixed;
+
+
+
+   }
+
+   .nav li {
+     top: -10px;
+     color: black;
+   }
+
+   #nav_item {
+     flex-direction: column;
+     gap: 10px;
+     border-bottom: 3px solid black;
+     top: 0;
+
+   }
+
+   h1 {
+     font-size: 20px;
+   }
+
+   #nav_item li {
+     border-bottom: 2px solid rgb(157, 147, 147);
+     padding-top: 10px;
+     top: 0;
+
+   }
+
+   #addmission-btn {
+     width: 100px;
+     font-size: 13px;
+     height: 40px;
+     margin-right: -5px;
+     margin-top: 20px;
+
+   }
+
+
+
+
+ }
